@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    IBOutlet UITextField *licensePlate;
+    IBOutlet UILabel *resultsMsg;
+    IBOutlet UIButton *searchBtn;
+    
+}
+
+- (IBAction)search:(id)sender;
 
 
 @end
