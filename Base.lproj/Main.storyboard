@@ -54,15 +54,23 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="1" green="0.010302376964786641" blue="0.030407675681219604" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzt-Oj-TOG">
+                                <rect key="frame" x="147" y="366" width="310" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="ipZ-Fr-oWu" secondAttribute="centerX" id="5Do-NO-qgB"/>
                             <constraint firstItem="hPt-Mi-Z8n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49" id="BQs-e9-FNr"/>
+                            <constraint firstItem="Hzt-Oj-TOG" firstAttribute="centerX" secondItem="hDh-WH-VTJ" secondAttribute="centerX" id="GcT-s8-7Os"/>
                             <constraint firstItem="hPt-Mi-Z8n" firstAttribute="centerX" secondItem="IIx-5u-3SE" secondAttribute="centerX" constant="2.5" id="KqX-yt-eI2"/>
                             <constraint firstItem="JxX-RG-mq4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="Ljz-Z9-Bg5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ipZ-Fr-oWu" secondAttribute="bottom" id="Oev-8x-my2"/>
                             <constraint firstItem="IIx-5u-3SE" firstAttribute="top" secondItem="hPt-Mi-Z8n" secondAttribute="bottom" constant="25" id="dVJ-7J-v2s"/>
+                            <constraint firstItem="Hzt-Oj-TOG" firstAttribute="top" secondItem="hDh-WH-VTJ" secondAttribute="bottom" constant="60" id="eKE-Ym-lfH"/>
                             <constraint firstItem="hPt-Mi-Z8n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fsf-ag-Ixr"/>
                             <constraint firstAttribute="width" secondItem="ipZ-Fr-oWu" secondAttribute="width" id="gVK-Og-kJe"/>
                             <constraint firstItem="hDh-WH-VTJ" firstAttribute="top" secondItem="JxX-RG-mq4" secondAttribute="bottom" constant="7" id="mD4-fc-Egw"/>
@@ -74,6 +82,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="expirationMsg" destination="Hzt-Oj-TOG" id="TtR-3w-DBy"/>
                         <outlet property="licensePlate" destination="JxX-RG-mq4" id="ZdH-ag-joM"/>
                         <outlet property="resultsMsg" destination="hDh-WH-VTJ" id="Jax-HT-qmI"/>
                         <outlet property="searchBtn" destination="ipZ-Fr-oWu" id="UZo-JG-GcU"/>

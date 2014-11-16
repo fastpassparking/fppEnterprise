@@ -28,8 +28,33 @@
 }
 
 - (IBAction)search:(id)sender {
-    resultsMsg.hidden = !resultsMsg.hidden;
-
+    // Variables needed to set
+    bool validPlate = false;
+    NSDate *expirationDate = [[NSDate alloc] init];
+    NSDate *currentDate = [NSDate date];
+    
+    // Hide the error message, if not already.
+    resultsMsg.hidden = true;
+    
+    // TODO : Search for plate and update info.
+    validPlate = true;
+    
+    // Show error message, if the plate cannot be found
+    resultsMsg.hidden = validPlate;
+    
+    if (currentDate > expirationDate) {
+        // Set text
+        expirationMsg.text = @"Parking pass expired at 10:42 PM.";
+        
+        // Set background
+        // TODO
+    } else {
+        // Set text
+        expirationMsg.text = @"Parking pass expires at 10:42 PM.";
+        
+        // Set background
+        // TODO
+    }
 }
 
 

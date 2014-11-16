@@ -13,6 +13,7 @@
     IBOutlet UITextField *licensePlate;
     IBOutlet UILabel *resultsMsg;
     IBOutlet UIButton *searchBtn;
+    IBOutlet UILabel *expirationMsg;
     
 }
 
